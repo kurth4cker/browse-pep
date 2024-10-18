@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "browse-pep"
+description = "Open a PEP in browser"
+maintainers = [
+    {name = "kurth4cker", email = "kurth4cker@gmail.com"},
+]
+readme = "README.md"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    # "Operating System :: Unix",
+    # "Operating System :: POSIX",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sr.ht/~kurth4cker/browse-pep"
+Repository = "https://git.sr.ht/~kurth4cker/browse-pep"
+Issues = "https://lists.sr.ht/~kurth4cker/public-inbox"
+
+[project.scripts]
+browse-pep = "browse_pep:main"
+
+[tool.hatch.version]
+source = "vcs"

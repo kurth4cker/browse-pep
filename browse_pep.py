@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: ISC
+# SPDX-FileCopyrightText: 2024 kurth4cker <kurth4cker@gmail.com>
+
+import argparse
+
+url = "https://peps.python.org/pep-{:04d}/"
+
+def main():
+    parser = argparse.ArgumentParser(description="Open peps in browser")
+    parser.add_argument("peps", help="PEP numbers for opening in browser", type=int,
+                        default=[0], nargs=argparse.ZERO_OR_MORE)
+    args = parser.parse_args()
+
+    for pep in args.peps:
+        print(url.format(pep))
+
+if __name__ == '__main__':
+    main()
