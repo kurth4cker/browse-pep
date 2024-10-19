@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling", "hatch-vcs"]
+requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
@@ -9,7 +9,6 @@ maintainers = [
     {name = "kurth4cker", email = "kurth4cker@gmail.com"},
 ]
 readme = "README.md"
-dynamic = ["version"]
 classifiers = [
     "Development Status :: 1 - Planning",
     "Environment :: Console",
@@ -24,6 +23,7 @@ classifiers = [
     "Topic :: Software Development :: Documentation",
     "Topic :: Utilities",
 ]
+dynamic = ["version"]
 
 [project.urls]
 Homepage = "https://sr.ht/~kurth4cker/browse-pep"
@@ -34,4 +34,4 @@ Issues = "https://lists.sr.ht/~kurth4cker/public-inbox"
 browse-pep = "browse_pep:main"
 
 [tool.hatch.version]
-source = "vcs"
+path = "browse_pep.py"
