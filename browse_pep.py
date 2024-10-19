@@ -2,8 +2,10 @@
 # SPDX-FileCopyrightText: 2024 kurth4cker <kurth4cker@gmail.com>
 
 import argparse
+import subprocess
 
 url = "https://peps.python.org/pep-{:04d}/"
+browser = "xdg-open"
 
 def main():
     parser = argparse.ArgumentParser(description="Open peps in browser")
@@ -12,7 +14,7 @@ def main():
     args = parser.parse_args()
 
     for pep in args.peps:
-        print(url.format(pep))
+        subprocess.run((browser, url.format(pep)))
 
 if __name__ == '__main__':
     main()
