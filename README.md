@@ -13,13 +13,32 @@ just like any other python project. You can ise [pip][1], [uv][2], [gpep517][3],
 [3]: https://github.com/projg2/gpep517
 [4]: https://hatch.pypa.io/latest/
 
+Here are installation via pip:
+
+* Clone the source repository or install and extract tarball.
+* Checkout to source tree.
+
+Then use:
+
+	pip install --user .
+
+This will install package to your users site. For more information about
+installing python packages, see this [PYPA Tutorial][5].
+
+[5]: https://packaging.python.org/en/latest/tutorials/installing-packages/
+
 ## Usage
 
-    browse-pep pep-number
+Here is some use examples:
 
-or
+	# no pep is given, defaults to 0
+	browse-pep
+	# or
+	python3 -m browse_pep
 
-    python -m browse_pep pep-number
+	# can given one or more pep for browsing
+	browse-pep 8 9 517
+	browse-pep 1
 
 ## Copying
 
