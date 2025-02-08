@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: ISC
-# SPDX-FileCopyrightText: 2024 kurth4cker <kurth4cker@gmail.com>
+# SPDX-FileCopyrightText: 2025 kurth4cker <kurth4cker@gmail.com>
 
 import argparse
 import subprocess
 
-__version__ = "0.1.dev0"
+__version__ = "0.1.0"
 
 url = "https://peps.python.org/pep-{:04d}/"
 browser = "xdg-open"
