@@ -4,7 +4,7 @@
 import argparse
 import subprocess
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 url = "https://peps.python.org/pep-{:04d}/"
 browser = "xdg-open"
