@@ -20,7 +20,6 @@ classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
-    "Topic :: Documentation",
     "Topic :: Software Development :: Documentation",
     "Topic :: Utilities",
 ]
